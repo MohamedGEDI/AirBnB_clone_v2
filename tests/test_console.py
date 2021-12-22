@@ -8,11 +8,11 @@ from io import StringIO
 from unittest.mock import patch
 
 
-from AirBnB_clone_v2.models import storage
-from AirBnB_clone_v2.models.base_model import BaseModel
-from AirBnB_clone_v2.tests import clear_stream
+from models import storage
+from models.base_model import BaseModel
+from tests import clear_stream
 
-from AirBnB_clone_v2.console import HBNBCommand
+from console import HBNBCommand
 
 
 @unittest.skipIf(os.getenv('HBNB_TYPE_STORAGE') == 'db',
